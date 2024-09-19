@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types Demonstration</title>
+    <style>
+        .input-container {
+            margin-bottom: 20px;
+        }
+
+            .input-container label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+        .radio-group {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Input Types Demonstration</h1>
+
+    <div class="input-container">
+        <label for="text">Text Input:</label>
+        <input type="text" id="text" placeholder="Text input">
+       
+    </div>
+
+    <div class="input-container">
+        <label for="password">Password Input:</label>
+        <input type="password" id="password" placeholder="Password input">
+        
+    </div>
+
+    <div class="input-container">
+        <label for="email">Email Input:</label>
+        <input type="email" id="email" placeholder="Email input">
+       
+    </div>
+
+    <div class="input-container">
+        <label for="number">Number Input:</label>
+        <input type="number" id="number" placeholder="Number input" min="1" max="10">
+        
+    </div>
+
+    <div class="input-container">
+        <label for="range">Range Input:</label>
+        <input type="range" id="range" min="0" max="100" value="50">
+       
+    </div>
+
+    <div class="input-container">
+        <label for="date">Date Input:</label>
+        <input type="date" id="date">
+       
+    </div>
+
+    <div class="input-container">
+        <label for="color">Color Input:</label>
+        <input type="color" id="color">
+       
+    </div>
+
+    <div class="input-container">
+        <label for="checkbox">Checkbox Input:</label>
+        <input type="checkbox" id="checkbox">
+       
+    </div>
+
+    <div class="input-container">
+        <label>Radio Input:</label>
+        <div class="radio-group">
+            <label for="radio1">
+                <input type="radio" id="radio1" name="radio" value="option1"> Option 1
+            </label>
+            <label for="radio2">
+                <input type="radio" id="radio2" name="radio" value="option2"> Option 2
+            </label>
+        </div>
+       
+    </div>
+
+    <div class="input-container">
+        <label for="tel">Telephone Input:</label>
+        <input type="tel" id="tel" placeholder="Telephone input">
+        
+    </div>
+
+    <div class="input-container">
+        <label for="url">URL Input:</label>
+        <input type="url" id="url" placeholder="URL input">
+        
+    </div>
+
+</body>
+</html>
