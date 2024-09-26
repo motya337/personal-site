@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Page</title>
+    <style>
+        
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        
+        .parallax {
+            background-image: url('mountains.jpg'); 
+            min-height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        
+        .content {
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 50px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .parallax {
+                background-attachment: scroll; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax"></div>
+    <div class="content">
+        <h1>Result</h1>
+        <p>An example of parallax</p>
+    </div>
+</body>
+</html>
