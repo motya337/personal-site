@@ -1,13 +1,18 @@
+/* Скидання стандартних стилів для всіх елементів */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Основні стилі для тіла документа */
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Задає мінімальну висоту тіла */
 }
+
+/* Стилі для навігаційної панелі */
 .navbar {
     height: 75px;
     background-color: royalblue;
@@ -15,8 +20,10 @@ body {
     justify-content: center; 
     align-items: center; 
     color: white;
-    font-size: 24px;
+    font-size: 24px; /* Розмір шрифту для навігації */
 }
+
+/* Стилі для заголовка */
 .header {
     height: 400px;
     background-color: lightskyblue;
@@ -24,8 +31,10 @@ body {
     justify-content: center; 
     align-items: center; 
     color: white;
-    font-size: 32px;
+    font-size: 32px; /* Розмір шрифту для заголовка */
 }
+
+/* Стилі для основної секції */
 .main {
     flex-grow: 1; 
     margin: 75px 100px; 
@@ -34,8 +43,10 @@ body {
     flex-direction: column; 
     justify-content: start; 
     align-items: center; 
-    gap: 20px; 
+    gap: 20px; /* Відстань між елементами */
 }
+
+/* Стилі для жовтого абзацу */
 .yellow-paragraph {
     width: 100%; 
     height: 200px;
@@ -45,8 +56,10 @@ body {
     justify-content: center; 
     align-items: center; 
     color: black;
-    font-size: 24px;
+    font-size: 24px; /* Розмір шрифту */
 }
+
+/* Контейнер для оранжевих блоків */
 .orange-container {
     width: 100%; 
     display: flex;
@@ -54,6 +67,8 @@ body {
     align-items: center; 
     gap: 10px; 
 }
+
+/* Стилі для оранжевих блоків */
 .orange-box {
     width: 48%; 
     height: 200px;
@@ -62,8 +77,10 @@ body {
     justify-content: center; 
     align-items: center; 
     color: white;
-    font-size: 20px;
+    font-size: 20px; /* Розмір шрифту */
 }
+
+/* Стилі для секції перед футером */
 .prefooter {
     height: 40px;
     background-color: silver;
@@ -71,8 +88,10 @@ body {
     justify-content: center; 
     align-items: center; 
     color: white;
-    font-size: 20px;
+    font-size: 20px; /* Розмір шрифту */
 }
+
+/* Стилі для футера */
 .footer {
     height: 100px;
     background-color: black;
@@ -80,5 +99,20 @@ body {
     justify-content: center; 
     align-items: center; 
     color: white;
-    font-size: 24px;
+    font-size: 24px; /* Розмір шрифту */
+}
+
+/* Адаптивні стилі для екранів менше ніж 768px */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 18px; /* Зменшення розміру шрифту */
+    }
+    
+    .main {
+        margin: 20px; /* Зменшення відступів */
+    }
+    
+    .orange-box {
+        width: 100%; /* Зробити блоки ширшими на маленьких екранах */
+    }
 }
